@@ -12,3 +12,12 @@
 // 5! = 5 * 4 * 3 * 2 * 1 = 120
 // The task is to write a function factorial(n) that calculates n! using recursive calls.
 
+const factorial = number => {
+    if (number == 1) {
+        return 1;
+    } else {
+        return number * factorial(number - 1)
+    }
+}
+
+console.log(factorial(5))
