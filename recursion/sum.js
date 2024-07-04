@@ -23,3 +23,12 @@ const sumTo = number => {
     }
     return sum
 }
+
+const usingRecursion = number => {
+    if (number == 1) {
+        return 1
+    } else {
+        return number + usingRecursion(number - 1)
+    }
+}
+
